@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>I am in a2_first</h1>
+        {% if a > b %}
+            <h1> I am outer if block</h1>
+            {% if a > c %}
+                <h1>I am in inner if block </h1>
+                <h1>a value is {{a}}</h1>
+            {% else %}
+                <h1>I am in inner if block </h1>
+                <h1>c value is {{c}}</h1>
+            {% endif %}
+        {% else %}
+            <h1> I am outer else block</h1>
+            {% if b > c %}
+                <h1>I am in inner if block </h1>
+                <h1>b value is {{b}}</h1>
+            {% else %}
+                <h1>I am in inner else block </h1>
+                <h1>c value is {{c}}</h1>
+            {% endif %}
+        {% endif %}    
+    </center>
+</body>
+</html>
